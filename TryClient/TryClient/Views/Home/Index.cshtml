@@ -1,0 +1,49 @@
+﻿@model List<Product>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <div class="container mt-2">
+
+        <div class="bg-dark text-white-50 lead text-center my-2 p-3">
+            Product List
+        </div>
+        <div class="text-right pr-2 my-2">
+            <a asp-action="Add"asp-controller="Home"class="btn btn-primary btn-sm">Ekle</a>
+        </div>
+        
+        <table class="table table-hover table-striped table-bordered table-sm">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>İşlem</th>
+                </tr>
+            
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <td>@product.ProductID</td>
+                        <td>@product.ProductName</td>
+                        <td>
+                            <a asp-action="Edit"asp-controller="Home"asp-route-id="@product.ProductID"class="btn btn-warning btn-sm">Edit</a>
+                            <a onlick="return confirm('Silmek İstediginizden Emin Misiniz?')" asp-action="Delete" asp-controller="Home" asp-route-id="@product.ProductID" class="btn btn-danger btn-sm">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "2cbMiHQwacX1YXmPEKDI2hWq5ar7TeeunQUCvhKMBplffDo5RYwL/0Sn0nMlh9A8ntbUdZjQLUBcMmPjRNJgHQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Alper\\Desktop\\Staj-Api Projesi\\TryClient\\TryClient\\TryClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Alper\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
